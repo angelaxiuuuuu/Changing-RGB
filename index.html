@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Adjuster</title>
+    <style>
+        .slider-container {
+            margin-bottom: 20px;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <label for="red-slider">Red</label>
+        <input type="range" id="red-slider" min="0" max="255" value="255">
+    </div>
+    <div class="slider-container">
+        <label for="green-slider">Green</label>
+        <input type="range" id="green-slider" min="0" max="255" value="255">
+    </div>
+    <div class="slider-container">
+        <label for="blue-slider">Blue</label>
+        <input type="range" id="blue-slider" min="0" max="255" value="255">
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
